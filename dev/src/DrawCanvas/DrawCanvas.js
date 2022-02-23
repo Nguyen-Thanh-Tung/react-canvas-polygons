@@ -237,7 +237,9 @@ class DrawCanvas extends React.PureComponent {
                     ref={canvas => this.canvas = canvas} width={width} height={height}
                     style={{ color: 'black',
                         backgroundImage: `url(${imgSrc})`,
-                        backgroundSize: 'cover'
+                        backgroundSize: 'cover',
+                        width: '100%',
+                        height: '100%',
                     }}
                     onMouseDown={this.onMouseDown}
                     onMouseMove={this.onMouseMove}
